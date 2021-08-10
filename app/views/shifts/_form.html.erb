@@ -1,0 +1,49 @@
+<%= form_with(model: shift) do |form| %>
+  <% if shift.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(shift.errors.count, "error") %> prohibited this shift from being saved:</h2>
+
+      <ul>
+        <% shift.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Employee_name %>
+    <%= form.text_field :Employee_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Shift_date %>
+    <%= form.date_select :Shift_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Start_time %>
+    <%= form.time_select :Start_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Finish_time %>
+    <%= form.time_select :Finish_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Break_length %>
+    <%= form.text_field :Break_length %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Shift_cost %>
+    <%= form.text_field :Shift_cost %>
+  </div>
+
+ 
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

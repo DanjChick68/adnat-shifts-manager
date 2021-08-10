@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Employee_name: MyString
+  Shift_date: 2021-08-07
+  Start_time: 2021-08-07 00:46:57
+  Finish_time: 2021-08-07 00:46:57
+  Break_length: 9.99
+  Shift_cost: MyString
+
+two:
+  Employee_name: MyString
+  Shift_date: 2021-08-07
+  Start_time: 2021-08-07 00:46:57
+  Finish_time: 2021-08-07 00:46:57
+  Break_length: 9.99
+  Shift_cost: MyString
